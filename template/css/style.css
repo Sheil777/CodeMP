@@ -217,10 +217,12 @@ body {
     font-size: 18px;
   }
 }
+.main__text {
+  position: relative;
+  z-index: 5;
+}
 @media (max-width: 992px) {
   .main__text {
-    position: relative;
-    z-index: 5;
     max-width: 450px;
   }
 }
