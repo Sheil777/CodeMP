@@ -1,0 +1,18 @@
+.header {
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+    }
+
+    &__login {
+        width: 167px;
+        height: 53px;
+        border-radius: 62px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-sizing: border-box;
+    }
+}
