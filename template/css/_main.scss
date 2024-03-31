@@ -197,8 +197,11 @@
 
     &__img {
         position: relative;
-
         z-index: 5;
+
+        img {
+            width: 380px;
+        }
 
         @media (max-width: 1270px) {
             margin-left: 40px;
