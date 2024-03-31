@@ -129,7 +129,6 @@ body {
 .main__left {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   flex: 0 1 650px;
   height: 775px;
 }
@@ -176,6 +175,7 @@ body {
   .main__left h1 {
     padding-top: 190px;
     font-size: 32px;
+    max-width: 450px;
   }
 }
 @media (max-width: 768px) {
@@ -204,26 +204,19 @@ body {
 @media (max-width: 992px) {
   .main__left p {
     font-size: 22px;
+    max-width: 450px;
   }
 }
 @media (max-width: 768px) {
   .main__left p {
     text-align: center;
-    padding-top: 22px;
+    padding-top: 0px;
+    padding-bottom: 20px;
   }
 }
 @media (max-width: 500px) {
   .main__left p {
     font-size: 18px;
-  }
-}
-.main__text {
-  position: relative;
-  z-index: 5;
-}
-@media (max-width: 992px) {
-  .main__text {
-    max-width: 450px;
   }
 }
 .main__right {
@@ -294,13 +287,27 @@ body {
   }
 }
 .main__buttons {
+  position: absolute;
+  bottom: 0;
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
   gap: 15px;
+  width: 648px;
+}
+@media (max-width: 1270px) {
+  .main__buttons {
+    width: 550px;
+  }
+}
+@media (max-width: 992px) {
+  .main__buttons {
+    width: 96%;
+  }
 }
 @media (max-width: 768px) {
   .main__buttons {
+    position: relative;
     width: 90%;
   }
 }
@@ -308,6 +315,7 @@ body {
   .main__buttons {
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
   }
 }
 
