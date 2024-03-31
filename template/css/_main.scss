@@ -73,11 +73,20 @@
     }
 
     &__right {
+        position: relative;
     }
 
     &__img {
+        position: relative;
         margin-left: 140px;
         margin-top: 10px;
+        z-index: 5;
+    }
+
+    &__decoration {
+        position: absolute;
+        top: 20px;
+        left: -116px;
     }
 }
 
