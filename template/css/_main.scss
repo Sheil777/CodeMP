@@ -1,18 +1,112 @@
 .header {
+    padding-top: 30px;
+    position: relative;
 
     &__container {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     &__logo {
     }
 
     &__login {
+        position: absolute;
+        right: 30px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
         width: 167px;
         height: 53px;
         border-radius: 62px;
         border: 1px solid rgba(255, 255, 255, 0.2);
         box-sizing: border-box;
+
+        span {
+            font-weight: 600;
+            font-size: 20px;
+            color: #fff;
+        }
+    }
+}
+
+/* Main */
+
+.main {
+
+    &__container {
+        display: flex;
+
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 0 1 650px;
+
+        h1 {
+            padding-top: 170px;
+            font-size: 48px;
+            font-weight: 900;
+            line-height: 125%;
+            letter-spacing: 2.2px;
+            color: #fff;
+        }
+
+        p {
+            padding-top: 56px;
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 135%;
+            color: #fff;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    &__right {
+    }
+
+    &__img {
+        margin-left: 140px;
+        margin-top: 10px;
+    }
+}
+
+.buttons {
+    &__try, &__how {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 65px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 125%;
+        color: #fff;
+
+        border-radius: 62px;
+        box-sizing: border-box;
+    }
+
+    &__try {
+        flex: 0 1 315px;
+
+        background: linear-gradient(170.41deg, rgba(170, 0, 250, 0.46) 25.842%,rgba(238, 14, 150, 0.46) 101.636%),rgb(170, 0, 250);
+    }
+
+    &__how {
+        gap: 16px;
+        flex: 0 1 306px;
+
+        border: 1px solid rgb(255, 255, 255);
     }
 }

@@ -28,7 +28,7 @@ body {
   font-size: 16px;
   color: #000;
   font-family: "SF Pro Display", sans-serif;
-  background-color: darkmagenta;
+  background-color: rgb(71, 51, 71);
 }
 
 .wrapper {
@@ -37,7 +37,7 @@ body {
 }
 
 ._container {
-  max-width: 1110px;
+  max-width: 1240px;
   margin: 0px auto;
   padding: 0 15px;
   box-sizing: content-box; /* Сам прибавляет padding */
@@ -59,14 +59,86 @@ body {
 }
  */
 /* ----------------------------------- */
+.header {
+  padding-top: 30px;
+  position: relative;
+}
 .header__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .header__login {
+  position: absolute;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   width: 167px;
   height: 53px;
   border-radius: 62px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-sizing: border-box;
+}
+.header__login span {
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* Main */
+.main__container {
+  display: flex;
+}
+.main__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 1 650px;
+}
+.main__left h1 {
+  padding-top: 170px;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 125%;
+  letter-spacing: 2.2px;
+  color: #fff;
+}
+.main__left p {
+  padding-top: 56px;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 135%;
+  color: #fff;
+}
+.main__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.main__img {
+  margin-left: 140px;
+  margin-top: 10px;
+}
+
+.buttons__try, .buttons__how {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 125%;
+  color: #fff;
+  border-radius: 62px;
+  box-sizing: border-box;
+}
+.buttons__try {
+  flex: 0 1 315px;
+  background: linear-gradient(170.41deg, rgba(170, 0, 250, 0.46) 25.842%, rgba(238, 14, 150, 0.46) 101.636%), rgb(170, 0, 250);
+}
+.buttons__how {
+  gap: 16px;
+  flex: 0 1 306px;
+  border: 1px solid rgb(255, 255, 255);
 }/*# sourceMappingURL=style.css.map */
