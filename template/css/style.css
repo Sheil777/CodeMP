@@ -90,9 +90,17 @@ body {
   box-sizing: border-box;
   transition: all 0.3s;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
+  .header__login {
+    width: 120px;
+    height: 48px;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 360px) {
   .header__login {
     width: 70px;
+    padding: 0;
   }
 }
 .header__login span {
@@ -101,14 +109,19 @@ body {
   color: #fff;
   transition: all 0.3s;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
+  .header__login span {
+    font-size: 17px;
+  }
+}
+@media (max-width: 360px) {
   .header__login span {
     display: none;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .header__login svg {
-    height: 26px;
+    height: 24px;
   }
 }
 .header__login svg path {
@@ -146,8 +159,13 @@ body {
 }
 @media (max-width: 992px) {
   .main__left {
-    height: 680px;
+    height: 564px;
     flex: 1;
+    margin-left: 60px;
+  }
+}
+@media (max-width: 890px) {
+  .main__left {
     margin-left: 0;
   }
 }
@@ -173,7 +191,7 @@ body {
 }
 @media (max-width: 992px) {
   .main__left h1 {
-    padding-top: 190px;
+    padding-top: 120px;
     font-size: 32px;
     max-width: 450px;
   }
@@ -230,6 +248,11 @@ body {
   }
 }
 @media (max-width: 992px) {
+  .main__right {
+    right: 70px;
+  }
+}
+@media (max-width: 890px) {
   .main__right {
     right: 27px;
   }
@@ -305,7 +328,7 @@ body {
 }
 @media (max-width: 992px) {
   .main__buttons {
-    width: 96%;
+    width: 460px;
   }
 }
 @media (max-width: 768px) {
@@ -334,10 +357,15 @@ body {
   border-radius: 62px;
   box-sizing: border-box;
 }
+@media (max-width: 992px) {
+  .buttons__try, .buttons__how {
+    font-size: 16px;
+    height: 60px;
+  }
+}
 @media (max-width: 768px) {
   .buttons__try, .buttons__how {
     height: 50px;
-    font-size: 16px;
     flex: auto;
   }
 }
